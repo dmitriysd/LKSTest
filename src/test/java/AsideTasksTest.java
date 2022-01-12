@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class MainPageTest extends BaseTest{
+public class AsideTasksTest extends BaseTest{
 
     @Test
     public void mainPage(){
@@ -23,6 +23,6 @@ public class MainPageTest extends BaseTest{
 
         assertThat(tab.isDisplayed()).as("Element has not been displayed!").isTrue();
         assertThat(tab.getText()).as("Wrong page!").isEqualTo("Задачи");
-        
+
     }
 }
