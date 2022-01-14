@@ -1,3 +1,4 @@
+import base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -8,11 +9,11 @@ import java.util.concurrent.TimeUnit;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-public class LoginTest extends BaseTest {
+public class RoleLoginTest extends BaseTest {
 
 
     @Test
-    public void LoginAdm(){
+    public void loginAdm(){
 
         WebElement login = driver.findElement(By.xpath("//input[@name='username']"));
         login.sendKeys("adm");
@@ -37,7 +38,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
-    public void LoginTop(){
+    public void loginTop(){
         WebElement login = driver.findElement(By.xpath("//input[@name='username']"));
         login.sendKeys("top");
         WebElement password = driver.findElement(By.xpath("//input[@name='password']"));
@@ -58,7 +59,7 @@ public class LoginTest extends BaseTest {
       }
 
     @Test
-    public void LoginCur(){
+    public void loginCur(){
         WebElement login = driver.findElement(By.xpath("//input[@name='username']"));
         login.sendKeys("cur");
         WebElement password = driver.findElement(By.xpath("//input[@name='password']"));
@@ -78,7 +79,7 @@ public class LoginTest extends BaseTest {
         logOut.click();
     }
     @Test
-    public void LoginLdr(){
+    public void loginLdr(){
         WebElement login = driver.findElement(By.xpath("//input[@name='username']"));
         login.sendKeys("ldr");
         WebElement password = driver.findElement(By.xpath("//input[@name='password']"));
@@ -99,7 +100,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
-    public void LoginMng(){
+    public void loginMng(){
         WebElement login = driver.findElement(By.xpath("//input[@name='username']"));
         login.sendKeys("mng");
         WebElement password = driver.findElement(By.xpath("//input[@name='password']"));
@@ -119,7 +120,7 @@ public class LoginTest extends BaseTest {
         logOut.click();
     }
     @Test
-    public void LoginCurDrb(){
+    public void loginCurDrb(){
         WebElement login = driver.findElement(By.xpath("//input[@name='username']"));
         login.sendKeys("cur-drb");
         WebElement password = driver.findElement(By.xpath("//input[@name='password']"));
@@ -139,7 +140,7 @@ public class LoginTest extends BaseTest {
         logOut.click();
     }
     @Test
-    public void LoginSup(){
+    public void loginSup(){
         WebElement login = driver.findElement(By.xpath("//input[@name='username']"));
         login.sendKeys("sup");
         WebElement password = driver.findElement(By.xpath("//input[@name='password']"));
@@ -159,7 +160,7 @@ public class LoginTest extends BaseTest {
         logOut.click();
     }
     @Test
-    public void LoginAib(){
+    public void loginAib(){
         WebElement login = driver.findElement(By.xpath("//input[@name='username']"));
         login.sendKeys("aib");
         WebElement password = driver.findElement(By.xpath("//input[@name='password']"));
@@ -179,7 +180,7 @@ public class LoginTest extends BaseTest {
         logOut.click();
     }
     @Test
-    public void LoginAnl(){
+    public void loginAnl(){
         WebElement login = driver.findElement(By.xpath("//input[@name='username']"));
         login.sendKeys("anl");
         WebElement password = driver.findElement(By.xpath("//input[@name='password']"));

@@ -1,3 +1,6 @@
+package base.aside;
+
+import base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -7,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class AsideLeadsTest extends BaseTest{
+public class AsideLeadsTest extends BaseTest {
 
     @Test
             public void leads() {
